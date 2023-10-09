@@ -1,27 +1,332 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  overflow-x: hidden;
+}
+.services {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  gap: 12px;
+  border: solid 2px #c4a24d;
+  color: #c4a24d;
+  background-color: rgb(12, 24, 39);
+  border-radius: 100%;
+  position: relative !important;
+  z-index: 999;
+  overflow: hidden;
+}
+.contact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  border: solid 2px #c4a24d;
+  color: rgb(12, 24, 39);
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 100%;
+  transition: all ease-in-out 1s;
+  transform: translateY(160px);
+}
+.business-services:hover .contact {
+  display: flex;
+  transition: all ease-in-out 1s;
+  transform: translateY(0px);
+}
+.services:hover .contact {
+  display: flex;
+  transition: all ease-in-out 1s;
+  transform: translateY(0px);
+}
+.parallax {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/banner.jpg");
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 4rem;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+ 
+}
+.input {
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 35px;
+  padding-left: 8px;
+  outline: none;
+  margin-bottom: 9px;
+  border-radius: 5px;
+  transition: all ease-in-out 0.5s;
+}
+.input:focus {
+  border: 1px solid rgb(12, 24, 39);
+}
+.textarea {
+  width: 100%;
+  height: 130px;
+  resize: none;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 5px 0px 0px 7px;
+  transition: all ease-in-out 0.5s;
+}
+.textarea:focus {
+  border: 1px solid rgb(12, 24, 39);
+}
+.submit {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(12, 24, 39);
+  color: white;
+  margin-top: 15px;
+  transition: all ease-in-out 0.8s;
+}
+.submit:hover {
+  transition: all ease-in-out 0.8s;
+  background-color: rgb(3, 7, 18);
+}
+.parallax2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/about.jpg");
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 3rem;
+  width: 100%;
+  height: 40vh;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.movie {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+.movie-banner {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.business {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("/business.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.civil {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("/on.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.buttons {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  width: 150px;
+  height: 50px;
+  border: 1px solid #c4a24d;
+  color: #c4a24d;
+  border-radius: 4px;
+  transition: all ease-in-out 1s;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.btn {
+  background: linear-gradient(256deg, #000000, #333333);
+  background-size: 400% 400%;
+
+  -webkit-animation: button 33s ease infinite;
+  -moz-animation: button 33s ease infinite;
+  -o-animation: button 33s ease infinite;
+  animation: button 6s ease infinite;
+}
+.business-parallax {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url("/on.png");
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 4rem;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.business-services {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  gap: 12px;
+  border: solid 2px #c4a24d;
+  color: #c4a24d;
+  background-color: #000;
+  border-radius: 100%;
+  position: relative !important;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.pulsar {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  border-radius: 50%;
+  border: solid 2px #ffff;
+}
+.pulsar-img {
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  border-radius: 50%;
+
+  background-color: red;
+}
+.pulsar:before,
+.pulsar:after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  bottom: -10px;
+  top: -10px;
+  right: -10px;
+  border: solid 2px #fff;
+  display: block;
+  border-radius: 50%;
+  animation: pulsar 0.9s linear infinite;
+}
+.insta {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  border-radius: 9px;
+  color: #fff;
+  
+
+
+}
+@keyframes pulsar {
+  0% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@-webkit-keyframes button {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes button {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes button {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes button {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  .movie {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .movie {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .movie {
+    display: none;
+  }
+  .movie-banner {
+    display: none;
+  }
+  .mobile {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/on.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 740px) {
+  .parallax {
+    height: 100%;
+  }
 }
