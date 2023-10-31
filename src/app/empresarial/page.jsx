@@ -1,12 +1,14 @@
 "use client";
+import Link from "next/link";
+
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Link from "next/link";
 
-import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
 import {
-  FaGlobe,
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
   FaHandcuffs,
   FaHandshakeSimple,
   FaPeopleRoof,
@@ -15,13 +17,16 @@ import {
   FaUserInjured,
   FaWhatsapp,
 } from "react-icons/fa6";
+import Contact from "../../components/Contact/FormEmpresarial";
+
 const Empresarial = () => {
-  const id = "#contato";
+ 
+
   const [showMenu, setShowMenu] = useState(false);
   const [showMenuMobile, setShowMenuMobile] = useState(false);
-  const [slider, setShowSlider] = useState();
-  const [showModal, setShowModal] = useState(false);
-  const imgs = ["/team.jpg", "/contrato.jpg", "/about.jpg", "/team.jpg"];
+ 
+
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -31,10 +36,15 @@ const Empresarial = () => {
   const handleShowMenu = () => {
     setShowMenuMobile(!showMenuMobile);
   };
-  const handleShowImg = (img) => {
-    setShowModal(true);
-    setShowSlider(img);
+
+  const handleGoToUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
+
+
   return (
     <>
       {" "}
@@ -96,14 +106,7 @@ const Empresarial = () => {
               <p className=" text-xs text-white">9:00AM - 05:00PM</p>
             </div>
           </div>
-          <div className="">
-            <div className="flex items-center gap-6">
-              <BsFacebook size={25} color="#c4a24d" />
-
-              <BsInstagram size={25} color="#c4a24d" />
-              <BsYoutube size={26} color="#c4a24d" />
-            </div>
-          </div>
+         
         </div>
         <div className="flex items-center justify-between px-10 pt-4">
           <div className="w-[40%]">
@@ -250,14 +253,14 @@ const Empresarial = () => {
       <section className="w-full h-full bg-[#293844] flex flex-col items-center justify-center px-4 py-[8rem]">
         <div
           data-aos="fade-up"
-          data-aos-duration="3000"
-          className="w-full h-full flex gap-5 "
+          data-aos-duration="1000"
+          className="flex-col-reverse md:w-full h-full flex md:flex-row gap-5 "
         >
-          <div className="w-[60%] h-full flex  flex-col relative gap-4 border-l-4 border-b-4  border-t-4  border-white py-2 px-4">
-            <h1 className="text-white bg-[#293844] -mt-6 ml-7 w-1/3 text-center text-3xl font-bold uppercase">
+          <div className="w-full md:w-[60%] h-full flex  flex-col relative gap-4 md:border-l-4 md:border-b-4  md:border-t-4  md:border-white py-2 px-4">
+            <h1 className="w-full text-white text-left md:text-white bg-[#293844] md:-mt-6 md:ml-7 md:w-1/3 md:text-center text-3xl font-bold uppercase">
               Quem Somos
             </h1>
-            <div className="text-justify w-[70%] h-full flex items-center justify-center flex-col gap-3  px-4   ">
+            <div className="w-full px-0 md:text-justify md:w-[70%] h-full flex items-center justify-center flex-col gap-3  md:px-4   ">
               <p className="text-white text-sm ">
                 Guedes Bampi & Associados é um escritório de advocacia
                 especializado no ramo empresarial, dedicado a fornecer serviços
@@ -285,7 +288,7 @@ const Empresarial = () => {
               </p>
             </div>
           </div>
-          <div className="w-[40%] h-full flex items-center justify-center my-auto ">
+          <div className="w-full md:w-[40%] h-full flex items-center justify-center my-auto ">
             <div className="w-full h-full  flex items-center justify-center ">
               <img
                 src="/team.jpg"
@@ -296,141 +299,112 @@ const Empresarial = () => {
           </div>
         </div>
         <div className="w-full h-full mt-8 flex items-center justify-center">
-          <button className="w-96 rounded-3xl bg-[#b28422] py-4 text-white">Solicitar atendimento</button>
+          <button className="w-96 rounded-3xl bg-[#b28422] py-4 text-white">
+            Solicitar atendimento
+          </button>
         </div>
       </section>
       {/*Servicos*/}
       <section className="business-parallax">
         <h1
           data-aos="fade-up"
-          data-aos-duration="3000"
+          data-aos-duration="1000"
           className="text-3xl text-center uppercase font-bold text-white py-8"
         >
           Nossos Serviços{" "}
         </h1>
         <div
           data-aos="fade-up"
-          data-aos-duration="3000"
-          className="w-11/12 mx-auto h-full grid grid-cols-3 gap-3"
+          data-aos-duration="1000"
+          className="grid-cols-1 w-full px-4 md:w-11/12 mx-auto h-full grid md:grid-cols-3 gap-3  "
         >
-          <div className="h-full w-full bg-[#1D1E2C]  flex items-center justify-center flex-col gap-2 text-[#c4a24d] rounded-md">
-            <div className="text-[#b28422]">
+          <div className="h-full w-full py-10 bg-[#1D1E2C]  flex items-center justify-center flex-col gap-2 text-[#c4a24d] rounded-md sm:mb-4">
+            <div className=" w-full  h-full text-[#b28422] flex items-center justify-center">
               <FaPeopleRoof size={50} color="#b28422" />
             </div>
             <h1>Familiar</h1>
           </div>
-          <div className="h-full w-full bg-[#1D1E2C]  flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
+
+          <div className="h-full w-full py-10 bg-[#1D1E2C]  flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
             <div className="">
               <FaUserInjured size={50} color="#b28422" />
             </div>
             <h2>Trabalhista</h2>
           </div>
-          <div className="h-full w-full bg-[#1D1E2C]   flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
+
+          <div className="h-full w-full py-10 bg-[#1D1E2C]   flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
             <div className="">
               <FaHandcuffs size={50} color="#b28422" />
             </div>
             <h2>Criminalista</h2>
           </div>
-          <div className="h-full w-full bg-[#1D1E2C]  flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
-            <div className="">
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="grid-cols-1 w-full px-4 md:w-11/12 mx-auto h-full grid md:grid-cols-3 gap-3 mt-2"
+        >
+          <div className="h-full w-full py-10 bg-[#1D1E2C]  flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
+            <div className="sm:w-full">
               <FaHandshakeSimple size={50} color="#b28422" />
             </div>
             <h2>Contratual</h2>
           </div>
-          <div className="h-full w-full bg-[#1D1E2C]   flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
+
+          <div className="h-full w-full py-10 bg-[#1D1E2C]   flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
             <div className="">
               <FaScaleBalanced size={50} color="#b28422" />
             </div>
             <h2>Empresarial</h2>
           </div>
-          <div className="h-full w-full bg-[#1D1E2C]    flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
-         <FaHandHoldingDollar size={50}/>
-         <h2>Direito Tributário</h2>
+
+          <div className="h-full w-full py-10 bg-[#1D1E2C]    flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
+            <div className="">
+              <FaHandHoldingDollar size={50} />
+            </div>
+            <h2>Direito Tributário</h2>
           </div>
         </div>
-        <div className="w-full h-full mt-5 flex items-center justify-center">
-          <button className="w-96 rounded-3xl bg-[#b28422] py-4 text-white">Solicitar atendimento</button>
+        <div className="w-full h-full mt-10 flex items-center justify-center">
+          <button className="w-96 rounded-3xl bg-[#b28422] py-4 text-white">
+            Solicitar atendimento
+          </button>
         </div>
       </section>
       {/*Contato*/}
-      <section className="w-full h-full bg-[#293844] bg-contain bg-no-repeat py-[4rem] ">
-        <div className="flex w-[90%] h-full mx-auto relative">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            className="w-[80%] h-[600px] bg-[#56b2] relative "
-          >
-            <div className="absolute top-10 left-4">
-              <h1 className="text-white text-3xl uppercase opacity-50 font-bold">
-                Fale Conosco
-              </h1>
-              <h2 className="text-white opacity-40">
-                Envie sua mensagem preenchendo o formulário abaixo.
-              </h2>
-            </div>
+      <section className="w-full h-full bg-[#293844]  " id="contact">
 
-            <form
-              action=""
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              className="w-full h-full px-4 py-4 flex items-center justify-end flex-col "
-            >
-              <div className="w-full flex gap-2 mb-10">
-                <input
-                  type="text"
-                  placeholder="Nome"
-                  className="w-full bg-transparent border-b-2  border-white outline-none placeholder-white text-white pb-2"
-                />
-                <input
-                  type="text"
-                  placeholder="SobreNome"
-                  className="w-full bg-transparent border-b-2  border-white outline-none placeholder-white text-whitepb-2"
-                />
-              </div>
-              <div className="w-full flex gap-2 mb-16">
-                <input
-                  type="email"
-                  placeholder="E-mail"
-                  className="w-full  bg-transparent border-b-2  border-white outline-none placeholder-white text-white pb-2"
-                />
-                <input
-                  type="text"
-                  placeholder="Telefone"
-                  className="w-full  bg-transparent border-b-2  border-white outline-none placeholder-white text-white pb-2"
-                />
-              </div>
-              <div className="w-full">
-                <textarea
-                  type="text"
-                  placeholder="Mensagem"
-                  className="w-full h-40 resize-none bg-transparent border-b-2 border-white outline-none placeholder-white text-white"
-                />
-              </div>
-              <div className="w-full flex items-center justify-end mt-7">
-                <button className="bg-[#293844] text-white w-32 h-8 rounded-sm">
-                  ENVIAR
-                </button>
-              </div>
-            </form>
-          </div>
+      <Contact/>
+      </section>
+      <footer className="w-full h-full bg-[#1D1E2C]  py-[4rem]">
+        <div className="grid-cols-1 gap-8 md:w-full h-full grid md:grid-cols-4 md:gap-4">
+          {/*Grid Logo*/}
           <div
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            className="flex items-center justify-center flex-col bg-white w-[40%] h-[600px]   gap-5 px-4 "
+            className="flex items-center justify-center w-full  "
+            onClick={handleGoToUp}
           >
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              className="w-20 h-20 mt-10 rounded-full bg-black flex items-center justify-center border-2 border-[#c4a24d]"
-            >
-              <img src="/icone.png" alt="Logo" className="w-12 h-12 bg-cover" />
+            <div className="w-24 h-24 md:w-36 md:h-36 rounded-full border-2 border-[#c4a24d] cursor-pointer flex items-center justify-center">
+              <img
+                src="/icone.png"
+                alt="Logo"
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
+              />
             </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              className="flex flex-col w-full items-center justify-around gap-4"
-            >
-              <div className="w-full flex items-center justify-start gap-4">
+          </div>
+
+          {/*Grid Contato*/}
+          <div className="flex flex-col  items-center px-4  gap-5">
+            <h1 className="block uppercase text-lg text-white w-full text-left">
+              Contato
+            </h1>
+            <div className="w-full flex items-center justify-start gap-4">
+              <Link
+                href={
+                  "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20empresarial!"
+                }
+                target="_blank"
+                className="w-full flex items-center justify-start gap-4"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -445,11 +419,16 @@ const Empresarial = () => {
                     d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
                   />
                 </svg>
-                <h2 className="text-gray-500">(51) 999-999-999</h2>
-              </div>
+                <h2 className="text-gray-400">(51) 980-519-018</h2>
+              </Link>
+            </div>
 
-              <div className="w-full flex items-center justify-start gap-4">
-                <div className=" flex gap-4 items-center">
+            <div className="w-full flex items-center justify-start gap-4">
+              <div className=" flex gap-4 items-center">
+                <Link
+                  href={"mailto:suporte@gmail.com.br"}
+                  className="w-full flex items-center justify-start gap-4"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -464,53 +443,20 @@ const Empresarial = () => {
                       d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
                     />
                   </svg>
-                  <h2 className="  text-gray-500">
+                  <h2 className="  text-gray-400">
                     guedesempresarial@gmail.com
                   </h2>
-                </div>
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              className="w-full flex flex-col items-center justify-start "
-            >
-              <h2 className="w-full text-gray-500 text-left text-lg font-bold uppercase py-8">
-                Redes Sociais
-              </h2>
-              <div className="flex items-center gap-6 justify-start w-full">
-                <div className="flex items-center justify-center w-10 h-10 border-2 border-[#c4a24d] rounded-full">
-                  <BsFacebook size={22} color="#c4a24d" />
-                </div>
-                <div className="flex items-center justify-center w-10 h-10 border-2 border-[#c4a24d] rounded-full">
-                  <BsInstagram size={22} color="#c4a24d" />
-                </div>
-                <div className="flex items-center justify-center w-10 h-10 border-2 border-[#c4a24d] rounded-full">
-                  <BsYoutube size={22} color="#c4a24d" />
-                </div>
+                </Link>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <footer className="w-full h-full bg-[#1D1E2C]  py-[4rem]">
-        <div className="grid-cols-1 md:w-full h-full grid md:grid-cols-4 gap-4">
-          <div className="flex items-center justify-center w-full h-full">
-            <div className="flex items-center justify-center w-36 h-36 rounded-full border-2 border-[#c4a24d] ">
-              <img
-                src="/icone.png"
-                alt="Logo"
-                className="w-24 h-24 bg-contain"
-              />
-            </div>
-          </div>
-
-          <div className=" justify-start md:flex  md:justify-center  ">
-            <h1 className="block md:hidden mb-4 text-lg text-[#c4a24d]">
-              Menu Navegação
+          {/*Grid Menu*/}
+          <div className="md:flex flex-col  items-center px-4  gap-5 ">
+            <h1 className="block uppercase text-lg text-white w-full text-left ">
+              Navegação
             </h1>
-            <nav className=" flex ">
-              <ul className="flex flex-col gap-5 text-white">
+            <nav className=" flex w-full gap-2 ">
+              <ul className="flex flex-col gap-5 text-gray-400">
                 <li className="hover:text-[#c4a24d]">
                   <Link href={"#"}>Home</Link>
                 </li>
@@ -523,68 +469,67 @@ const Empresarial = () => {
               </ul>
             </nav>
           </div>
-
-          <div className=" md:flex flex-col items-center  md:gap-5  ">
-            <h1 class="block md:hidden mb-4 text-lg text-[#c4a24d]">
-              Redes Socias
+          {/*Grid Midias Socias*/}
+          <div className=" md:flex flex-col  items-center px-4    ">
+            <h1 className="block uppercase text-lg text-white w-full text-left ">
+              Redes Sociais
             </h1>
-            <div className="flex justify-start  md: items-center md:justify-center gap-4  ">
-              <Link
-                href={"https://www.facebook.com/profile.php?id=100086693444267"}
-                target="_blank"
-              >
-                <div className="flex items-center justify-center w-9 h-9  rounded-full border-2 border-[#c4a24d] bg-white ">
-                  <BsFacebook size={24} color="#3b5998" />
-                </div>
-              </Link>
-              <p className="w-24 text-white">Facebook</p>
-            </div>
-
-            <div className=" flex justify-start my-2  md: items-center md:justify-center gap-4 ">
-              <div className="flex items-center justify-center w-9 h-9  rounded-full border-2 border-[#c4a24d] bg-white  ">
-                <BsInstagram size={24} className="insta" />
+            <div className="justify-start flex md:flex items-center md:justify-start w-full h-full gap-4 ">
+              <div className="flex  md: items-center md:justify-center gap-4  ">
+                <Link
+                  href={
+                    "https://www.facebook.com/profile.php?id=100086693444267"
+                  }
+                  target="_blank"
+                >
+                  <div className="flex items-center justify-center w-9 h-9  rounded-full border-2 border-[#c4a24d] bg-white ">
+                    <FaFacebookF size={24} color="#3b5998" />
+                  </div>
+                </Link>
               </div>
-              <p className="w-24 text-white">Instagram</p>
-             </div>
-            <div className=" flex justify-start  md: items-center md:justify-center gap-4 ">
-              <div className="flex items-center justify-center w-9 h-9  rounded-full border-2 border-[#c4a24d] bg-white ">
-                <BsYoutube size={24} color="#c4302b" />
-              </div>
-              <p className="w-24 text-white">Youtube</p>
-            </div>
-          </div>
 
-          <div className=" justify-start md:flex flex-col items-center   gap-5">
-            <h1 className="block md:hidden mb-4 text-lg text-[#c4a24d]">
-              Links Úteis
-            </h1>
-            <Link
-              href={"https://adv-harmo.vercel.app/"}
-              target="_blank"
-              className="flex items-center justify-start w-full gap-2"
-            >
-              <FaGlobe size={25} color="#fff" />
-              <p className="text-white">Advogados Harmonizaçao</p>
-            </Link>
-            <Link
-              href={"https://hotmart.com/pt-br"}
-              target="_blank"
-              className="flex items-center justify-start w-full gap-2"
-            >
-              <img src="/hot.png" alt="" className="w-11 -11 -ml-2" />
-              <p className="text-white">Hotmart</p>
-            </Link>
+              <div className=" flex justify-start my-2  md: items-center md:justify-center gap-4 ">
+                <Link
+                  href={"https://www.instagram.com/guedesbampi.adv/"}
+                  target="_blank"
+                >
+                  <div className="flex items-center justify-center w-9 h-9  rounded-full border-2 border-[#c4a24d] bg-white  ">
+                    <FaInstagram size={24} className="insta" />
+                  </div>
+                </Link>
+              </div>
+              <div className=" flex justify-start  md: items-center md:justify-center gap-4 ">
+                <Link
+                  href={
+                    "https://www.youtube.com/@guedesbampiadvogadosassoci9262"
+                  }
+                  target="_blank"
+                >
+                  <div className="flex items-center justify-center w-9 h-9  rounded-full border-2 border-[#c4a24d] bg-white ">
+                    <FaYoutube size={24} color="#c4302b" />
+                  </div>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
+
         <div className="flex items-center justify-center text-white py-4 border-t-2 border-[#c4a24d] mt-4 ">
           <p className="">Todos os direitos reservados</p>&copy;
           <p>GuedesBampi</p>
         </div>
       </footer>
       <div className="fixed bottom-4 right-6">
-        <div className="pulsar">
-          <FaWhatsapp size={50} color="#fff" />
-        </div>
+        <Link
+          href={
+            "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20empresarial!"
+          }
+          target="_blank"
+        >
+          <div className="pulsar">
+            <FaWhatsapp size={50} color="#fff" />
+          </div>
+        </Link>
       </div>
     </>
   );
