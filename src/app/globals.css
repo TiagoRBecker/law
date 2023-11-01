@@ -276,14 +276,7 @@ background-attachment: fixed;
   border-radius: 50%;
   animation: pulsar 0.9s linear infinite;
 }
-.insta {
-  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-  border-radius: 9px;
-  color: #fff;
-  
 
-
-}
 @keyframes pulsar {
   0% {
     transform: scale(0.9);
@@ -373,6 +366,12 @@ background-attachment: fixed;
     height: 100%;
   }
   .saude{
+    height: 100%;
+  }
+  .civil{
+    height: 100%;
+  }
+  .business{
     height: 100%;
   }
 }

@@ -255,7 +255,7 @@ const Empresarial = () => {
             Empresarial.
           </p>
           <div className="">
-            <button className="w-[250px] mt-8 mx-auto py-4 text-white bg-[#c4a24d]  uppercase font-bold rounded-md">
+            <button className="w-full md:w-[250px] mt-8 mx-auto py-4 text-white bg-[#c4a24d]  uppercase font-bold rounded-md">
               <Link
                 href={
                   "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20médica!"
@@ -323,9 +323,9 @@ const Empresarial = () => {
                   "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20empresarial!"
                 }
                 target="_blank"
-                className="flex gap-2 items-center"
+                className="flex gap-2 items-center w-full px-2"
               >
-          <button className="w-96 rounded-3xl bg-[#b28422] py-4 text-white">
+          <button className="w-full  md:w-96 rounded-3xl bg-[#b28422] py-4 text-white">
             Solicitar atendimento
           </button>
           </Link>
@@ -372,7 +372,7 @@ const Empresarial = () => {
           className="grid-cols-1 w-full px-4 md:w-11/12 mx-auto h-full grid md:grid-cols-3 gap-3 mt-2"
         >
           <div className="h-full w-full py-10 bg-[#1D1E2C]  flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
-            <div className="sm:w-full">
+            <div className="">
               <FaHandshakeSimple size={50} color="#b28422" />
             </div>
             <h2>Contratual</h2>
@@ -398,9 +398,9 @@ const Empresarial = () => {
                   "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20empresarial!"
                 }
                 target="_blank"
-                className="flex gap-2 items-center"
+                className="flex gap-2 items-center w-full px-2"
               >
-          <button className="w-96 rounded-3xl bg-[#b28422] py-4 text-white">
+          <button className="w-full  md:w-96 rounded-3xl bg-[#b28422] py-4 text-white">
             Solicitar atendimento
           </button>
           </Link>
