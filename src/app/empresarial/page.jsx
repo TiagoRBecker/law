@@ -51,8 +51,9 @@ const Empresarial = () => {
       {/*Header*/}
       <header className="business">
         <div className=" hidden md:w-full h-16 bg-[#1D1E2C] md:flex gap-3 items-center justify-between px-4">
-          <div className="flex gap-3 items-center ">
+        <div className="flex gap-3 items-center ">
             <div className=" flex items-center gap-2">
+              <Link href={"mailto:teste@xn--advogadosdaharmonizao-21b5g.com.br"} className="flex gap-2" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -67,11 +68,19 @@ const Empresarial = () => {
                   d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
                 />
               </svg>
-              <p className=" text-sm text-white">
+              <p className="text-sm text-white">
                 guedesbampiempresarial@gmail.com
               </p>
+              </Link>
             </div>
             <div className=" flex items-center gap-2">
+            <Link
+                href={
+                  "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20empresarial!"
+                }
+                target="_blank"
+                className="flex gap-2 items-center"
+              >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -86,7 +95,8 @@ const Empresarial = () => {
                   d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
                 />
               </svg>
-              <p className=" text-xs text-white">51 9999-9999</p>
+              <p className=" text-sm text-white">51 9999-9999</p>
+              </Link>
             </div>
             <div className=" flex items-center gap-2">
               <svg
@@ -103,14 +113,14 @@ const Empresarial = () => {
                   d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              <p className=" text-xs text-white">9:00AM - 05:00PM</p>
+              <p className="text-sm text-white">9:00AM - 05:00PM</p>
             </div>
           </div>
          
         </div>
-        <div className="flex items-center justify-between px-10 pt-4">
-          <div className="w-[40%]">
-            <img src="/ma.png" alt="Logo" />
+        <div className="flex items-center justify-around  w-full px-4">
+          <div className="w-[50%] flex items-center justify-center  pt-2 md:w-[20%] h-full">
+            <img src="/ma.png" alt="Logo" className="w-full h-full object-cover"/>
           </div>
           <div className="flex md:w-full absolute right-2 top-0 pt-4 md:hidden items-center justify-end">
             <svg
@@ -119,7 +129,7 @@ const Empresarial = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-8 h-8 bg-black text-[#c4a24d] "
+              className="w-8 h-8 bg-[#1D1E2C] text-[#c4a24d] "
               onClick={handleShowMenu}
             >
               <path
@@ -129,7 +139,7 @@ const Empresarial = () => {
               />
             </svg>
           </div>
-          <nav className="w-[60%] flex items-center justify-end">
+          <nav className="w-[80%] flex items-center justify-end">
             <ul className=" hidden md:flex gap-5 text-white font-bold">
               <li className="hover:text-[#c4a24d]">
                 <Link href={"#"}>Home</Link>
@@ -171,7 +181,7 @@ const Empresarial = () => {
           <ul
             className={
               showMenuMobile
-                ? "flex md:hidden text-white absolute top-16 border-t-2 border-[#c4a24d] w-full h-screen left-0 bg-black  flex-col gap-10 px-5 py-5"
+                ? "flex md:hidden text-white absolute top-16 border-t-2 border-[#c4a24d] w-full h-screen left-0 bg-[#1D1E2C]  flex-col gap-10 px-5 py-5"
                 : "hidden"
             }
           >
@@ -234,7 +244,7 @@ const Empresarial = () => {
           data-aos="fade-right"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
-          className="w-[60%] ml-8 mt-16  px-10 py-5 flex flex-col text-white  "
+          className="ml-0 md:w-[60%] md:ml-8 mt-16  px-10 py-5 flex flex-col text-white   "
         >
           <h2>Precisa de ajuda?</h2>
           <h1 className="text-4xl mb-4 ">Nós podemos te ajudar!</h1>
@@ -244,9 +254,18 @@ const Empresarial = () => {
             advocacia que se destaca por sua expertise no campo do Direito
             Empresarial.
           </p>
-          <button className="w-[250px] mt-8 mx-auto py-4 text-white bg-[#c4a24d] uppercase font-bold rounded-md">
-            <Link href={"#contato"}>Fale Conosco</Link>
-          </button>
+          <div className="">
+            <button className="w-[250px] mt-8 mx-auto py-4 text-white bg-[#c4a24d]  uppercase font-bold rounded-md">
+              <Link
+                href={
+                  "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20médica!"
+                }
+                target="_blank"
+              >
+                Fale Conosco
+              </Link>
+            </button>
+          </div>
         </div>
       </header>
       {/*Sobre*/}
@@ -299,9 +318,17 @@ const Empresarial = () => {
           </div>
         </div>
         <div className="w-full h-full mt-8 flex items-center justify-center">
+        <Link
+                href={
+                  "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20empresarial!"
+                }
+                target="_blank"
+                className="flex gap-2 items-center"
+              >
           <button className="w-96 rounded-3xl bg-[#b28422] py-4 text-white">
             Solicitar atendimento
           </button>
+          </Link>
         </div>
       </section>
       {/*Servicos*/}
@@ -366,9 +393,17 @@ const Empresarial = () => {
           </div>
         </div>
         <div className="w-full h-full mt-10 flex items-center justify-center">
+        <Link
+                href={
+                  "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20empresarial!"
+                }
+                target="_blank"
+                className="flex gap-2 items-center"
+              >
           <button className="w-96 rounded-3xl bg-[#b28422] py-4 text-white">
             Solicitar atendimento
           </button>
+          </Link>
         </div>
       </section>
       {/*Contato*/}
