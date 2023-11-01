@@ -248,7 +248,7 @@ const Empresarial = () => {
         >
           <h2>Precisa de ajuda?</h2>
           <h1 className="text-4xl mb-4 ">Nós podemos te ajudar!</h1>
-          <p className="text-xs">
+          <p className="text-base text-white">
             A Guedesbampi Advocacia: Compromisso com a Excelência no Direito
             Empresarial A Guedesbampi Advocacia é uma renomada empresa de
             advocacia que se destaca por sua expertise no campo do Direito
