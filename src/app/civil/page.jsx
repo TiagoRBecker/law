@@ -301,7 +301,7 @@ const Civil = () => {
               className="w-full h-auto object-cover rounded-md md:shadow-[21px_24px_0px_0px_#c4a24d,0px_3px_8px_0px_#00000024] "
             />
           </div>
-          <div className="w-fullbg-red-800 md:w-[60%] flex flex-col items-center justify-center  px-10">
+          <div className="w-full md:w-[60%] flex flex-col items-center justify-center  px-10">
             <span className="hidden md:text-[#c4a24d] text-xl  text-left w-full font-bold uppercase">
               Sobre Nós
             </span>
