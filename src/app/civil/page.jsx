@@ -4,7 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import {
- 
   FaGlobe,
   FaHandcuffs,
   FaHandshakeSimple,
@@ -45,49 +44,53 @@ const Civil = () => {
         <div className=" hidden md:w-full h-16 bg-[#072137] md:flex gap-3 items-center justify-between px-4">
           <div className="flex gap-3 items-center ">
             <div className=" flex items-center gap-2">
-              <Link href={"mailto:teste@xn--advogadosdaharmonizao-21b5g.com.br"} className="flex gap-2" target="_blank">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 text-[#c4a24d]"
+              <Link
+                href={"mailto:teste@xn--advogadosdaharmonizao-21b5g.com.br"}
+                className="flex gap-2"
+                target="_blank"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                />
-              </svg>
-              <p className="text-sm text-white">
-                guedesbampiempresarial@gmail.com
-              </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6 text-[#c4a24d]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+                <p className="text-sm text-white">
+                  guedesbampiecivil@guedesbampi.com
+                </p>
               </Link>
             </div>
             <div className=" flex items-center gap-2">
-            <Link
-                href={
-                  "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20médica!"
-                }
+              <Link
+              href={
+                "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A"
+              }
                 target="_blank"
                 className="flex gap-2 items-center"
               >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 text-[#c4a24d]"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                />
-              </svg>
-              <p className=" text-sm text-white">51 9999-9999</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6 text-[#c4a24d]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                  />
+                </svg>
+                <p className=" text-sm text-white">51 980-519-018</p>
               </Link>
             </div>
             <div className=" flex items-center gap-2">
@@ -108,7 +111,6 @@ const Civil = () => {
               <p className="text-sm text-white">9:00AM - 05:00PM</p>
             </div>
           </div>
-         
         </div>
         <div className="flex items-center justify-around  w-full px-4">
           <div
@@ -117,7 +119,11 @@ const Civil = () => {
             data-aos-easing="ease-in-sine"
             className="w-[50%] flex items-center justify-center  pt-2 md:w-[20%] h-full"
           >
-            <img src="/ma.png" alt="Logo"  className="w-full h-full object-cover"/>
+            <img
+              src="/ma.png"
+              alt="Logo"
+              className="w-full h-full object-cover"
+            />
           </div>
           {/*hidden flex md:w-full absolute right-2 top-0 pt-4 md:hidden items-center justify-end*/}
           <div className="flex md:w-full absolute right-2 top-0 pt-4 md:hidden items-center justify-end">
@@ -250,26 +256,34 @@ const Civil = () => {
           className=" ml-0 md:w-[60%] md:ml-8 mt-16  px-10 py-5 flex flex-col text-white  "
         >
           <h2>Precisa de ajuda?</h2>
-          <h1 className="text-4xl mb-4 ">Nós podemos te ajudar!</h1>
+          <h1 className="text-3xl mb-4 ">
+            Os advogados da Guedes Bampi podem te ajudar!
+          </h1>
           <p className="text-base ">
-            A Guedesbampi Advocacia: Compromisso com a Excelência no Direito
-            Empresarial A Guedesbampi Advocacia é uma renomada empresa de
-            advocacia que se destaca por sua expertise no campo do Direito
-            Empresarial.
+            Nosso escritório é um dos mais completos para o atendimento de
+            pessoas físicas e jurídicas, uma banca de advogados
+            multidisciplinares que proporcionam ampla segurança Jurídica em
+            diversas áreas do Direito. Somos um único escritório para a solução
+            dos mais diversos problemas jurídicos da sua família e sua empresa.
+            Atuamos buscando a excelência na defesa dos interesses do nosso
+            cliente e sanando suas necessidades com uma completa orientação
+            jurídica. De modo incansável, buscamos a justiça, segurança e
+            prosperidade para todos que nos procuram. Clicando no botão abaixo,
+            nossa equipe pode trazer a solução do seu problema ainda hoje!
           </p>
 
           <div className="">
-          <Link
-                href={
-                  "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20civil!"
-                }
-                target="_blank"
-                >
-                <button className="w-[250px] mt-8 mx-auto py-4 text-white bg-[#c4a24d] uppercase font-bold rounded-md">
-              Fale Conosco
+            <Link
+              href={
+                "https://wa.me//5551980519018?text=Ol%C3%A1%21%20Eu%20gostaria%20de%20conversar%20com%20um%20advogado%20da%20Guedes%20Bampi.%20%20%0AAqui%20est%C3%A1%20um%20resumo%20do%20meu%20problema%3A%20%2Aescreva%20aqui%20o%20que%20n%C3%B3s%20podemos%20fazer%20para%20te%20ajudar%20hoje%21%2A"
+              }
+              target="_blank"
+            >
+              <button className="w-[250px] mt-8 mx-auto py-4 text-white bg-[#c4a24d] uppercase font-bold rounded-md">
+                Fale Conosco
               </button>
-              </Link>
-            </div>
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -295,41 +309,48 @@ const Civil = () => {
               Bem vindo a Guedes Bampi{" "}
             </h1>
             <p className="text-justify md:mb-2 text-gray-400">
-              A Guedesbampi Advocacia é uma renomada empresa de advocacia que se
-              destaca por sua expertise no campo do Direito Civil. Com anos de
-              experiência e um time de advogados altamente qualificados, a
-              empresa consolidou sua reputação como uma das referências no
-              mercado jurídico, oferecendo soluções sob medida para uma ampla
-              gama de questões civis.{" "}
+              A Guedes Bampi Advogados Associados é um renomado escritório de
+              advocacia que se destaca por seu atendimento diferenciado, com
+              qualidade e agilidade na solução dos problemas de seus clientes.
+              Com anos de experiência e um time de advogados altamente
+              qualificados, a empresa consolidou sua reputação como a mais
+              completa, principalmente no atendimento de empresas, empresários e
+              suas famílias, oferecendo soluções sob media para uma ampla gama
+              de questões civis. A Guedes Bampi cresce cada vez mais através da
+              indicação dos seus satisfeitos clientes.
             </p>
             <p className="text-gray-400">
-              No âmbito do Direito Civil, a Guedesbampi Advocacia presta
-              serviços abrangentes que abordam as complexidades das relações
-              entre indivíduos e entidades privadas. Seus advogados estão aptos
-              a lidar com uma variedade de questões, incluindo contratos,
-              responsabilidade civil, direito das obrigações, propriedade,
-              família e sucessões. O compromisso da Guedesbampi Advocacia com a
-              excelência e a satisfação do cliente é evidente em cada caso que
-              assumem. A equipe trabalha de forma diligente para compreender as
-              necessidades e objetivos de seus clientes, desenvolvendo
-              estratégias jurídicas sólidas e eficazes para alcançar os melhores
-              resultados. Além disso, a ética e a integridade estão no cerne da
-              prática da Guedesbampi Advocacia.
+              No âmbito do Direito Civil, a Guedes Bampi Advogados Associados
+              presta serviços abrangentes que abordam as complexidades das
+              relações entre indivíduos e entidades privadas. Seus advogados
+              estão prontos para lidar com qualquer tipo de questões, incluindo
+              as que envolvem contratos, responsabilidade civil, direito das
+              obrigações, propriedade, família e sucessões. O compromisso da
+              Guedes Bampi Advogados Associados com a excelência e a satisfação
+              do cliente é evidente em cada caso que assumem. A equipe trabalha
+              de forma ágil e humanizada para compreender as necessidades e
+              objetivos de seus clientes, desenvolvendo estratégias jurídicas
+              sólidas e eficazes para alcançar os melhores resultados. Além
+              disso, a ética e a integridade estão no cerne da prática da Guedes
+              Bampi Advogados Associados.
             </p>
           </div>
         </div>
-        <div   data-aos="fade-up"
-          data-aos-duration="1000" className="w-full h-full py-[2rem] flex items-center justify-center">
-               <Link
-                href={
-                  "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20médica!"
-                }
-                target="_blank"
-                className="flex gap-2 items-center"
-              >
-          <button className="w-96 rounded-3xl bg-[#b28422] py-4 text-white">
-            Solicitar atendimento
-          </button>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="w-full h-full py-[2rem] flex items-center justify-center"
+        >
+          <Link
+            href={
+              "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A"
+            }
+            target="_blank"
+            className="flex gap-2 items-center"
+          >
+            <button className="w-96 rounded-3xl bg-[#b28422] py-4 text-white">
+              Solicitar atendimento
+            </button>
           </Link>
         </div>
       </section>
@@ -353,7 +374,12 @@ const Civil = () => {
             Familiar
             <div className="contact">
               <p>Informações</p>
-              <Link href={"https://wa.link/n4j9mh"} target="_blank">
+              <Link
+                href={
+                  "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi sobre Direito de Familia.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A"
+                }
+                target="_blank"
+              >
                 <FaWhatsapp size={50} color="#25D366" />
               </Link>
             </div>
@@ -363,7 +389,12 @@ const Civil = () => {
             Trabalhista
             <div className="contact">
               <p>Informações</p>
-              <Link href={"https://wa.link/n4j9mh"} target="_blank">
+              <Link
+                href={
+                  "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi sobre Direito Trabalhista.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A"
+                }
+                target="_blank"
+              >
                 <FaWhatsapp size={50} color="#25D366" />
               </Link>
             </div>
@@ -373,7 +404,12 @@ const Civil = () => {
             Criminalista
             <div className="contact">
               <p>Informações</p>
-              <Link href={"https://wa.link/n4j9mh"} target="_blank">
+              <Link
+                href={
+                  "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi sobre Direito Criminal.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A"
+                }
+                target="_blank"
+              >
                 <FaWhatsapp size={50} color="#25D366" />
               </Link>
             </div>
@@ -383,7 +419,12 @@ const Civil = () => {
             Contratual
             <div className="contact">
               <p>Informações</p>
-              <Link href={"https://wa.link/n4j9mh"} target="_blank">
+              <Link
+                href={
+                  "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi sobre sobre Contratos.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A"
+                }
+                target="_blank"
+              >
                 <FaWhatsapp size={50} color="#25D366" />
               </Link>
             </div>
@@ -393,23 +434,28 @@ const Civil = () => {
             ...Outros
             <div className="contact">
               <p>Informações</p>
-              <Link href={"https://wa.link/n4j9mh"} target="_blank">
+              <Link
+                href={
+                  "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A&type=phone_number&app_absent=0"
+                }
+                target="_blank"
+              >
                 <FaWhatsapp size={50} color="#25D366" />
               </Link>
             </div>
           </div>
         </div>
         <div className="w-full h-full mt-5 flex items-center justify-center">
-        <Link
-                href={
-                  "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20médica!"
-                }
-                target="_blank"
-                className="flex gap-2 items-center"
-              >
-          <button className="w-96 rounded-3xl bg-[#b28422] py-4 text-white">
-            Solicitar atendimento
-          </button>
+          <Link
+            href={
+              "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A&type=phone_number&app_absent=0"
+            }
+            target="_blank"
+            className="flex gap-2 items-center"
+          >
+            <button className="w-96 rounded-3xl bg-[#b28422] py-4 text-white">
+              Solicitar atendimento
+            </button>
           </Link>
         </div>
       </section>
@@ -418,7 +464,7 @@ const Civil = () => {
         id="contato"
         className="w-full h-full flex flex-col  bg-[#072137] "
       >
-       <Contact/>
+        <Contact />
       </section>
       <footer className="w-full h-full bg-[#072137]  py-[4rem]">
         <div className="grid-cols-1 gap-8 md:w-full h-full grid md:grid-cols-4 md:gap-4">
@@ -444,7 +490,7 @@ const Civil = () => {
             <div className="w-full flex items-center justify-start gap-4">
               <Link
                 href={
-                  "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20empresarial!"
+                  "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A"
                 }
                 target="_blank"
                 className="w-full flex items-center justify-start gap-4"
@@ -470,7 +516,7 @@ const Civil = () => {
             <div className="w-full flex items-center justify-start gap-4">
               <div className=" flex gap-4 items-center">
                 <Link
-                  href={"mailto:suporte@gmail.com.br"}
+                  href={"mailto:teste@xn--advogadosdaharmonizao-21b5g.com.br"}
                   className="w-full flex items-center justify-start gap-4"
                 >
                   <svg
@@ -488,7 +534,7 @@ const Civil = () => {
                     />
                   </svg>
                   <h2 className="  text-gray-400">
-                    guedesempresarial@gmail.com
+                    guedescivil@guedesbampi.com
                   </h2>
                 </Link>
               </div>
@@ -519,19 +565,6 @@ const Civil = () => {
               Redes Sociais
             </h1>
             <div className="justify-start flex md:flex items-center md:justify-start w-full h-full gap-4 ">
-              <div className="flex  md: items-center md:justify-center gap-4  ">
-                <Link
-                  href={
-                    "https://www.facebook.com/profile.php?id=100086693444267"
-                  }
-                  target="_blank"
-                >
-                  <div className="flex items-center justify-center w-9 h-9  rounded-full border-2 border-[#c4a24d] bg-white ">
-                    <FaFacebookF size={24} color="#3b5998" />
-                  </div>
-                </Link>
-              </div>
-
               <div className=" flex justify-start my-2  md: items-center md:justify-center gap-4 ">
                 <Link
                   href={"https://www.instagram.com/guedesbampi.adv/"}
@@ -539,18 +572,6 @@ const Civil = () => {
                 >
                   <div className="flex items-center justify-center w-9 h-9  rounded-full border-2 border-[#c4a24d] bg-white  ">
                     <FaInstagram size={24} className="insta" />
-                  </div>
-                </Link>
-              </div>
-              <div className=" flex justify-start  md: items-center md:justify-center gap-4 ">
-                <Link
-                  href={
-                    "https://www.youtube.com/@guedesbampiadvogadosassoci9262"
-                  }
-                  target="_blank"
-                >
-                  <div className="flex items-center justify-center w-9 h-9  rounded-full border-2 border-[#c4a24d] bg-white ">
-                    <FaYoutube size={24} color="#c4302b" />
                   </div>
                 </Link>
               </div>
@@ -564,9 +585,15 @@ const Civil = () => {
         </div>
       </footer>
       <div className="fixed bottom-4 right-6">
+      <Link
+                href={
+                  "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A"
+                }
+                target="_blank">
         <div className="pulsar">
           <FaWhatsapp size={50} color="#fff" />
         </div>
+        </Link>
       </div>
     </>
   );

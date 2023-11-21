@@ -145,7 +145,7 @@ const Contact = () => {
             <div className="mb-3 md:w-[80%] h-full flex items-center ">
               <Link
                 href={
-                  "https://wa.me/5551980519018?text=Obrigado+por+entrar+em+contato+%21+Aguarde+ser+atendido."
+                  "https://api.whatsapp.com/send/?phone=5551992304689&text=Ol%C3%A1%21+Eu+gostaria+de+ser+atendido+por+um+advogado+da+Guedes+Bampi.+%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%28escreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21&type=phone_number&app_absent=0"
                 }
                 target="_blank"
                 className="flex items-center gap-4 "
@@ -154,7 +154,7 @@ const Contact = () => {
                   <FaWhatsapp size={24} color="white" />
                 </div>
                 <div className="">
-                  <p className="text-gray-400  ">(51) 98051-9018</p>
+                  <p className="text-gray-400  ">(51) 980-519-018</p>
                 </div>
               </Link>
             </div>
@@ -175,31 +175,18 @@ const Contact = () => {
           </div>
 
           <div className="w-[80%]  flex flex-col items-center justify-center mt-4">
-            <div className="w-[97%]  md:w-[74%] flex items-center justify-start gap-4 py-4">
+          <h1 className="uppercase text-gray-400  ">Siga Nos</h1>
+            <div className="w-[97%]  md:w-[74%] flex items-center justify-center gap-4 py-4">
+             
               <Link
-                href={"https://www.facebook.com/profile.php?id=100086693444267"}
-                target="_blank"
-              >
-                <div className="w-10 h-10 flex items-center justify-center ">
-                  <FaFacebookF size={26} color="#ccc" />
-                </div>
-              </Link>
-              <Link
-                href={"https://www.instagram.com/guedesbampi.med/"}
+                href={"https://www.instagram.com/guedesbampi.adv/"}
                 target="_blank"
               >
                 <div className="w-10 h-10 flex items-center justify-center">
-                  <FaInstagram size={26} color="#ccc" />
+                  <FaInstagram size={35} color="#ccc" />
                 </div>
               </Link>
-              <Link
-                href={"https://www.youtube.com/@guedesbampiadvogadosassoci9262"}
-                target="_blank"
-              >
-                <div className="w-10 h-10 flex items-center justify-center ">
-                  <FaYoutube size={26} color="#ccc" />
-                </div>
-              </Link>
+             
             </div>
           </div>
         </div>

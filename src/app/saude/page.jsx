@@ -2,19 +2,16 @@
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {
-
-  GiHealthNormal,
-
-  GiLoveInjection,
-} from "react-icons/gi";
+import { GiHealthNormal, GiLoveInjection } from "react-icons/gi";
 import {
   FaFacebookF,
   FaInstagram,
   FaYoutube,
-
   FaWhatsapp,
   FaFileMedical,
+  FaUserDoctor,
+  FaScaleBalanced,
+  FaHandHoldingMedical
 } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 import Contact from "../../components/Contact/FormSaude";
@@ -41,51 +38,54 @@ const Saude = () => {
       <header className="saude">
         <div className=" hidden md:w-full h-16 bg-[#022a2e] md:flex gap-3 items-center justify-between px-4">
           <div className="flex gap-3 items-center ">
-           
             <div className=" flex items-center gap-2">
-              <Link href={"mailto:teste@xn--advogadosdaharmonizao-21b5g.com.br"} className="flex gap-2" target="_blank">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 text-[#c4a24d]"
+              <Link
+                href={"mailto:teste@xn--advogadosdaharmonizao-21b5g.com.br"}
+                className="flex gap-2"
+                target="_blank"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                />
-              </svg>
-              <p className="text-sm text-white">
-                guedesbampiempresarial@gmail.com
-              </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6 text-[#c4a24d]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+                <p className="text-sm text-white">
+                  guedessaude@
+                </p>
               </Link>
             </div>
             <div className=" flex items-center gap-2">
-            <Link
+              <Link
                 href={
                   "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20médica!"
                 }
                 target="_blank"
                 className="flex gap-2 items-center"
               >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 text-[#c4a24d]"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                />
-              </svg>
-              <p className=" text-sm text-white">51 9999-9999</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6 text-[#c4a24d]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                  />
+                </svg>
+                <p className=" text-sm text-white">51 9999-9999</p>
               </Link>
             </div>
             <div className=" flex items-center gap-2">
@@ -114,7 +114,11 @@ const Saude = () => {
             data-aos-easing="ease-in-sine"
             className="w-[50%] flex items-center justify-center  pt-2 md:w-[20%] h-full"
           >
-            <img src="/ma.png" alt="Logo" className="w-full h-full object-cover" />
+            <img
+              src="/ma.png"
+              alt="Logo"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="flex md:w-full absolute right-2 top-0 pt-4 md:hidden items-center justify-end">
             <svg
@@ -180,7 +184,7 @@ const Saude = () => {
           <ul
             className={
               showMenuMobile
-                ? "flex md:hidden text-gray-400 absolute top-16 border-t-2 border-[#c4a24d] w-full h-screen left-0 bg-[#072137]  flex-col gap-10 px-5 py-5"
+                ? "flex md:hidden text-gray-400 absolute top-16 border-t-2 border-[#c4a24d] w-full h-screen left-0 bg-[#022a2e]  flex-col gap-10 px-5 py-5"
                 : "hidden"
             }
           >
@@ -248,16 +252,18 @@ const Saude = () => {
           <h2>Precisa de ajuda?</h2>
           <h1 className="text-4xl mb-8 ">Nós podemos te ajudar!</h1>
           <p className="text-base text-white">
-            A Guedesbampi Advocacia: Compromisso com a Excelência no Direito
-            Empresarial A Guedesbampi Advocacia é uma renomada empresa de
-            advocacia que se destaca por sua expertise no campo do Direito
-            Empresarial.
+            A Guedes Bampi Advogados possui um setor voltado exclusivamente para
+            o Direito médico e da saúde, devido à alta complexidade dos casos e
+            a necessidade de destacar que quando o assunto é vida e saúde, um
+            especialista precisa ser consultado. Nossa equipe de advogados conta
+            com profissionais especialistas em direito médio, professores de pós
+            graduação na matéria.
           </p>
           <div className="">
             <button className="w-[250px] mt-8 mx-auto py-4 text-white bg-[#022a2e] uppercase font-bold rounded-md">
               <Link
                 href={
-                  "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20médica!"
+                  "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi+sobre+Direito+M%C3%A9dico+e+da+sa%C3%BAde.+%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A&type=phone_number&app_absent=0"
                 }
                 target="_blank"
               >
@@ -267,7 +273,7 @@ const Saude = () => {
           </div>
         </div>
       </header>
-      <section className="w-full h-[calc(100%-80px)] py-[4rem] flex ">
+      <section  className="w-full h-[calc(100%-80px)] py-[4rem] flex ">
         <div className="hidden md:w-32 bg-[#d8d9e2]"></div>
         <div className="grid-cols-1 md:grid md:grid-cols-2 w-full h-full gap-4">
           <div
@@ -280,14 +286,32 @@ const Saude = () => {
               Assessoria jurídico especializada na área da saúde{" "}
             </h1>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. At eos
-              dolorem explicabo optio dolore corrupti omnis veritatis qui atque
-              ut minus, ad tempora necessitatibus quae harum, hic, similique
-              excepturi. Veritatis?
+              A Guedes Bampi & Associados é um escritório de advocacia
+              especializado no ramo empresarial, dedicado a fornecer serviços
+              jurídicos de alto nível para empresas. Oferecemos também um
+              serviço especializado para empresários no ramo da saúde e
+              estética, atendendo todas as classes profissionais. Uma empresa
+              que trabalha nesse ramo precisa seguir regras específicas do
+              conselho de classe, além de normas sanitárias, tributárias e
+              cíveis diferentes.
+            </p>
+            <p>
+              Nós contamos com advogados especialistas que atuam todos os dias
+              na prevenção e na defesa dos direitos de médicos, dentistas,
+              biomédicos, farmacêuticos e demais profissionais liberais da área
+              da saúde. A Guedes Bampi está sempre em busca de novas formas de
+              facilitar a vida dos empresários Brasileiros, permitindo que se
+              ocupem com o empreender, enquanto nós cuidamos dos litígios. Para
+              isso, contamos com uma banca de advogados multidisciplinares que
+              proporcionam ampla segurança Jurídica em diversas áreas do
+              Direito. Somos um único escritório para a solução dos mais
+              diversos problemas jurídicos que um empresário possa ter. Atuamos
+              buscando a excelência na defesa dos interesses do nosso cliente e
+              sanando suas necessidades com uma completa orientação jurídica.
             </p>
             <Link
               href={
-                "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20médica!"
+                "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi+sobre+Direito+M%C3%A9dico+e+da+sa%C3%BAde.+%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A&type=phone_number&app_absent=0"
               }
               target="_blank"
             >
@@ -312,7 +336,7 @@ const Saude = () => {
         <div className=" hidden md:w-32 bg-[#d8d9e2]"></div>
       </section>
       {/*Sobre*/}
-      <section className="w-full h-full bg-[#022a2e] py-[4rem] px-4">
+      <section id="sobre" className="w-full h-full bg-[#022a2e] py-[4rem] px-4">
         <div
           data-aos="fade-up"
           data-aos-offset="300"
@@ -324,37 +348,44 @@ const Saude = () => {
               Sobre nós
             </h1>
             <p className="text-gray-400 px-4 py-4 text-justify text-base">
-              A Guedesbampi Advocacia é uma renomada empresa de advocacia que se
-              destaca por sua expertise no campo do Direito Civil. Com 30 anos
-              de experiência e um time de advogados altamente qualificados, a
-              empresa consolidou sua reputação como uma das referências no
-              mercado jurídico, oferecendo soluções sob medida para uma ampla
-              gama de questões civis. No âmbito do Direito Civil, a Guedesbampi
-              Advocacia presta serviços abrangentes que abordam as complexidades
-              das relações entre indivíduos e entidades privadas. Seus advogados
-              estão aptos a lidar com uma variedade de questões, incluindo
-              contratos, responsabilidade civil, direito das obrigações,
-              propriedade, família e sucessões. O compromisso da Guedesbampi
-              Advocacia com a excelência e a satisfação do cliente é evidente em
-              cada caso que assumem. A equipe trabalha de forma diligente para
-              compreender as necessidades e objetivos de seus clientes,
-              desenvolvendo estratégias jurídicas sólidas e eficazes para
-              alcançar os melhores resultados. Além disso, a ética e a
-              integridade estão no cerne da prática da Guedesbampi Advocacia.
+              A Guedes Bampi Advogados Associados é um renomado escritório de
+              advocacia que se destaca por seu atendimento diferenciado, com
+              qualidade e agilidade na solução dos problemas de seus clientes.
+              Com anos de experiência e um time de advogados altamente
+              qualificados, a empresa consolidou sua reputação como a mais
+              completa, principalmente no atendimento de empresas, empresários e
+              suas famílias, oferecendo soluções sob media para uma ampla gama
+              de questões civis. A Guedes Bampi cresce cada vez mais através da
+              indicação dos seus satisfeitos clientes.
+            </p>
+            <p className="text-gray-400 px-4 py-4 text-justify text-base">
+              No âmbito do Direito Civil, a Guedes Bampi Advogados Associados
+              presta serviços abrangentes que abordam as complexidades das
+              relações entre indivíduos e entidades privadas. Seus advogados
+              estão prontos para lidar com qualquer tipo de questões, incluindo
+              as que envolvem contratos, responsabilidade civil, direito das
+              obrigações, propriedade, família e sucessões. O compromisso da
+              Guedes Bampi Advogados Associados com a excelência e a satisfação
+              do cliente é evidente em cada caso que assumem. A equipe trabalha
+              de forma ágil e humanizada para compreender as necessidades e
+              objetivos de seus clientes, desenvolvendo estratégias jurídicas
+              sólidas e eficazes para alcançar os melhores resultados. Além
+              disso, a ética e a integridade estão no cerne da prática da Guedes
+              Bampi Advogados Associados.
             </p>
           </div>
           <div className="w-full h-full flex items-center justify-center">
             <img
               src="/team.jpg"
               alt="Team"
-              className="w-full h-full rounded-md "
+              className="w-full h-full md:h-[500px] rounded-md "
             />
           </div>
         </div>
-        <div className="w-full h-full pt-10 flex items-center justify-center">
+        <div className="w-full h-full pt-10 flex items-center justify-center py-4">
           <Link
             href={
-              "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20médica!"
+              "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi+sobre+Assessoria+para+Profissionais+da+Sa%C3%BAde.+%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%252%C2%AA&type=phone_number&app_absent=0"
             }
             target="_blank"
           >
@@ -431,33 +462,57 @@ const Saude = () => {
         <h1 className="text-4xl py-4  font-bold text-[#022a2e] text-center uppercase">
           Áreas de atuação
         </h1>
-        <div className="grid-cols-1  md:grid md:grid-cols-3 w-full gap-5 px-4 ">
+        <div className="grid-cols-1  md:grid md:grid-cols-3 w-full gap-5 px-4  ">
+       
           <div className="flex flex-col mb-3 md:w-full h-full py-14 gap-3  bg-[#022a2e] items-center justify-center">
             <div className="w-16 h-16 rounded-full border-2 border-[#d8d9e2] flex items-center justify-center ">
               <GiHealthNormal size={40} color="white" />
             </div>
-            <p className="text-white uppercase text-lg">Direito Médico</p>
+            <p className="text-white uppercase text-base">FALHA NA PRESTAÇÃO DE SERVIÇO</p>
           </div>
           <div className="flex flex-col mb-3 md:w-full h-full py-14 gap-3  bg-[#022a2e] items-center justify-center">
             <div className="w-16 h-16 rounded-full border-2 border-[#d8d9e2] flex items-center justify-center ">
-              <GiLoveInjection size={40} color="white" />
+            <FaHandHoldingMedical  size={40} color="white" /> 
             </div>
-            <p className="text-white uppercase text-lg">Plano de Saúde</p>
+            <p className="text-white uppercase text-base">Plano de Saúde</p>
           </div>
           <div className="flex flex-col mb-3 md:w-full h-full py-14 gap-3  bg-[#022a2e] items-center justify-center">
             <div className="w-16 h-16 rounded-full border-2 border-[#d8d9e2] flex items-center justify-center ">
               <FaFileMedical size={40} color="white" />
             </div>
 
-            <p className="text-white uppercase text-lg">
+            <p className="text-white uppercase text-base">
               Documentos / Prontuários
             </p>
           </div>
         </div>
+        <div className="grid-cols-1  md:grid md:grid-cols-3 w-full gap-5 px-4 mt-4">
+        <div className="flex flex-col mb-3 md:w-full h-full py-14 gap-3  bg-[#022a2e] items-center justify-center">
+            <div className="w-16 h-16 rounded-full border-2 border-[#d8d9e2] flex items-center justify-center ">
+              <FaUserDoctor size={40} color="white" />
+            </div>
+            <p className="text-white uppercase text-base ">PROFISSIONAIS DA SAÚDE</p>
+          </div>
+          <div className="flex flex-col mb-3 md:w-full h-full py-14 gap-3  bg-[#022a2e] items-center justify-center">
+            <div className="w-16 h-16 rounded-full border-2 border-[#d8d9e2] flex items-center justify-center ">
+            <GiLoveInjection size={40} color="white" />
+           
+            </div>
+            <p className="text-white uppercase text-base ">PROFISSIONAIS DA ESTÉTICA E HARMONIZAÇÃO</p>
+          </div>
+          
+          <div className="flex flex-col mb-3 md:w-full h-full py-14 gap-3  bg-[#022a2e] items-center justify-center">
+            <div className="w-16 h-16 rounded-full border-2 border-[#d8d9e2] flex items-center justify-center ">
+            <FaScaleBalanced size={50} color="white" />
+            </div>
+            <p className="text-white uppercase text-base ">OUTROS</p>
+          </div>
+          
+        </div>
         <div className="w-full h-full  flex items-center justify-center py-14">
           <Link
             href={
-              "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20médica!"
+              "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi+sobre+Assessoria+para+Profissionais+da+Sa%C3%BAde.+%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje!"
             }
             target="_blank"
           >
@@ -468,7 +523,7 @@ const Saude = () => {
         </div>
       </section>
       {/*Contato*/}
-      <section className="w-full h-full bg-[#022a2e]">
+      <section id="contato" className="w-full h-full bg-[#022a2e]">
         <Contact />
       </section>
       <footer className="w-full h-full bg-[#022a2e]  py-[4rem]">
@@ -570,22 +625,11 @@ const Saude = () => {
               Redes Sociais
             </h1>
             <div className="justify-start flex md:flex items-center md:justify-start w-full h-full gap-4 ">
-              <div className="flex  md: items-center md:justify-center gap-4  ">
-                <Link
-                  href={
-                    "https://www.facebook.com/profile.php?id=100086693444267"
-                  }
-                  target="_blank"
-                >
-                  <div className="flex items-center justify-center w-9 h-9  rounded-full border-2 border-[#c4a24d] bg-white ">
-                    <FaFacebookF size={24} color="#3b5998" />
-                  </div>
-                </Link>
-              </div>
+             
 
               <div className=" flex justify-start my-2  md: items-center md:justify-center gap-4 ">
                 <Link
-                  href={"https://www.instagram.com/guedesbampi.adv/"}
+                  href={"https://www.instagram.com/guedesbampi.med/"}
                   target="_blank"
                 >
                   <div className="flex items-center justify-center w-9 h-9  rounded-full border-2 border-[#c4a24d] bg-white  ">
@@ -593,18 +637,7 @@ const Saude = () => {
                   </div>
                 </Link>
               </div>
-              <div className=" flex justify-start  md: items-center md:justify-center gap-4 ">
-                <Link
-                  href={
-                    "https://www.youtube.com/@guedesbampiadvogadosassoci9262"
-                  }
-                  target="_blank"
-                >
-                  <div className="flex items-center justify-center w-9 h-9  rounded-full border-2 border-[#c4a24d] bg-white ">
-                    <FaYoutube size={24} color="#c4302b" />
-                  </div>
-                </Link>
-              </div>
+             
             </div>
           </div>
         </div>
@@ -617,7 +650,7 @@ const Saude = () => {
       <div className="fixed bottom-4 right-6">
         <Link
           href={
-            "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20empresarial!"
+            "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi+sobre+Assessoria+para+Profissionais+da+Sa%C3%BAde.+%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21"
           }
           target="_blank"
         >

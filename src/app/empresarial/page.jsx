@@ -20,12 +20,8 @@ import {
 import Contact from "../../components/Contact/FormEmpresarial";
 
 const Empresarial = () => {
- 
-
   const [showMenu, setShowMenu] = useState(false);
   const [showMenuMobile, setShowMenuMobile] = useState(false);
- 
-
 
   useEffect(() => {
     AOS.init();
@@ -44,58 +40,61 @@ const Empresarial = () => {
     });
   };
 
-
   return (
     <>
       {" "}
       {/*Header*/}
       <header className="business">
         <div className=" hidden md:w-full h-16 bg-[#1D1E2C] md:flex gap-3 items-center justify-between px-4">
-        <div className="flex gap-3 items-center ">
+          <div className="flex gap-3 items-center ">
             <div className=" flex items-center gap-2">
-              <Link href={"mailto:teste@xn--advogadosdaharmonizao-21b5g.com.br"} className="flex gap-2" target="_blank">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 text-[#c4a24d]"
+              <Link
+                href={"mailto:teste@xn--advogadosdaharmonizao-21b5g.com.br"}
+                className="flex gap-2"
+                target="_blank"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                />
-              </svg>
-              <p className="text-sm text-white">
-                guedesbampiempresarial@gmail.com
-              </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6 text-[#c4a24d]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+                <p className="text-sm text-white">
+                  guedesbampiempresarial@guedesbampi.com
+                </p>
               </Link>
             </div>
             <div className=" flex items-center gap-2">
-            <Link
+              <Link
                 href={
                   "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20empresarial!"
                 }
                 target="_blank"
                 className="flex gap-2 items-center"
               >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 text-[#c4a24d]"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                />
-              </svg>
-              <p className=" text-sm text-white">51 9999-9999</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6 text-[#c4a24d]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                  />
+                </svg>
+                <p className=" text-sm text-white">51 98051-9018</p>
               </Link>
             </div>
             <div className=" flex items-center gap-2">
@@ -116,11 +115,14 @@ const Empresarial = () => {
               <p className="text-sm text-white">9:00AM - 05:00PM</p>
             </div>
           </div>
-         
         </div>
         <div className="flex items-center justify-around  w-full px-4">
           <div className="w-[50%] flex items-center justify-center  pt-2 md:w-[20%] h-full">
-            <img src="/ma.png" alt="Logo" className="w-full h-full object-cover"/>
+            <img
+              src="/ma.png"
+              alt="Logo"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="flex md:w-full absolute right-2 top-0 pt-4 md:hidden items-center justify-end">
             <svg
@@ -249,16 +251,21 @@ const Empresarial = () => {
           <h2>Precisa de ajuda?</h2>
           <h1 className="text-4xl mb-4 ">Nós podemos te ajudar!</h1>
           <p className="text-base text-white">
-            A Guedesbampi Advocacia: Compromisso com a Excelência no Direito
-            Empresarial A Guedesbampi Advocacia é uma renomada empresa de
-            advocacia que se destaca por sua expertise no campo do Direito
-            Empresarial.
+            A Guedes Bampi Advogados é um escritório voltado para a assessoria
+            completa à empresas, empresários e suas famílias. Essa experiência
+            de mais de 30 anos em contato com empresas dos mais diversos ramos
+            no Brasil e no Exterior trouxe para a Guedes Bampi uma assessoria
+            diferenciada, cuidando de detalhes que apenas advogados
+            especialistas com muita experiência percebem. De modo incansável,
+            buscamos a justiça, segurança e prosperidade para todos que nos
+            procuram. Clicando no botão abaixo, nossa equipe pode trazer a
+            solução do seu problema ainda hoje!
           </p>
           <div className="">
             <button className="w-full md:w-[250px] mt-8 mx-auto py-4 text-white bg-[#c4a24d]  uppercase font-bold rounded-md">
               <Link
                 href={
-                  "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20médica!"
+                  "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+ser+atendido+por+um+advogado+da+Guedes+Bampi.+%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%28escreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21&type=phone_number&app_absent=0"
                 }
                 target="_blank"
               >
@@ -283,27 +290,35 @@ const Empresarial = () => {
               <p className="text-white text-sm ">
                 Guedes Bampi & Associados é um escritório de advocacia
                 especializado no ramo empresarial, dedicado a fornecer serviços
-                jurídicos de alto nível para empresas. Liderados por Guedes
-                Bampi, nossos advogados associados formam uma equipe altamente
-                capacitada e experiente, focada exclusivamente nas necessidades
-                jurídicas das empresas.
+                jurídicos de alto nível para empresas. Surgimos no ramo
+                empresarial e expandimos conforme as demandas dos empresários e
+                suas famílias aumentava. Por isso contamos com uma banca de
+                advogados multidisciplinares que proporcionam ampla segurança
+                Jurídica em diversas áreas do Direito. Somos um único escritório
+                para a solução dos mais diversos problemas jurídicos que um
+                empresário possa ter. Atuamos buscando a excelência na defesa
+                dos interesses do nosso cliente e sanando suas necessidades com
+                uma completa orientação jurídica.
               </p>
               <p className="text-white text-sm ">
                 No mundo dos negócios, enfrentar desafios legais é inevitável. É
-                aí que entramos em ação. Compreendemos as complexidades do
-                ambiente empresarial e sabemos como navegar com destreza pelas
-                questões legais que afetam as empresas. Seja em contratos
-                comerciais, proteção de propriedade intelectual, fusões e
-                aquisições, questões de conformidade ou litígios, nossa equipe
-                está preparada para oferecer orientação jurídica estratégica.
+                aí que entramos em ação. Pela experiência, compreendemos as
+                complexidades do ambiente empresarial e sabemos como navegar com
+                destreza pelas questões legais que afetam as empresas. Seja em
+                contratos comerciais, proteção de propriedade intelectual,
+                fusões e aquisições, questões de conformidade ou litígios, nossa
+                equipe está preparada para oferecer orientação jurídica
+                estratégica.
               </p>
               <p className="text-white ">
-                A ética e a integridade são fundamentais em nosso trabalho. Não
-                apenas buscamos cumprir a lei, mas também orientamos nossos
-                clientes sobre como manter a integridade em suas operações
-                empresariais. Acreditamos que uma abordagem ética não apenas
-                evita problemas legais, mas também constrói uma base sólida para
-                o sucesso a longo prazo.
+                Os fundadores, além de advogados, foram empresários por muitos
+                anos e sentiram na pele as dificuldades do empreendedorismo, por
+                isso, o atendimento aos empresários na Guedes Bampi é
+                diferenciado. A excelência no trabalho vem da soma de anos de
+                empreendedorismo com os anos de Advocacia Empresarial. A Guedes
+                Bampi está sempre em busca de novas formas de facilitar a vida
+                dos empresários Brasileiros, permitindo que se ocupem com o
+                empreender, enquanto nós cuidamos dos litígios
               </p>
             </div>
           </div>
@@ -318,16 +333,16 @@ const Empresarial = () => {
           </div>
         </div>
         <div className="w-full h-full mt-8 flex items-center justify-center">
-        <Link
-                href={
-                  "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20empresarial!"
-                }
-                target="_blank"
-                className="flex gap-2 items-center w-full px-2"
-              >
-          <button className="w-full  md:w-96 rounded-3xl bg-[#b28422] py-4 text-white">
-            Solicitar atendimento
-          </button>
+          <Link
+            href={
+              "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A&type=phone_number&app_absent=0"
+            }
+            target="_blank"
+            className="flex gap-2 items-center  justify-center w-full px-2"
+          >
+            <button className="w-full  md:w-96 rounded-3xl bg-[#b28422] py-4 text-white">
+              Solicitar atendimento
+            </button>
           </Link>
         </div>
       </section>
@@ -346,24 +361,48 @@ const Empresarial = () => {
           className="grid-cols-1 w-full px-4 md:w-11/12 mx-auto h-full grid md:grid-cols-3 gap-3  "
         >
           <div className="h-full w-full py-10 bg-[#1D1E2C]  flex items-center justify-center flex-col gap-2 text-[#c4a24d] rounded-md sm:mb-4">
+          <Link
+              href={
+                "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi Direito Familiar .++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A&type=phone_number&app_absent=0"
+              }
+              className="flex items-center justify-center flex-col"
+              target="_blank"
+            >
             <div className=" w-full  h-full text-[#b28422] flex items-center justify-center">
               <FaPeopleRoof size={50} color="#b28422" />
             </div>
             <h1>Familiar</h1>
+            </Link>
           </div>
 
           <div className="h-full w-full py-10 bg-[#1D1E2C]  flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
+          <Link
+              href={
+                "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi Direito Trabalhista .++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A&type=phone_number&app_absent=0"
+              }
+              className="flex items-center justify-center flex-col"
+              target="_blank"
+            >
             <div className="">
               <FaUserInjured size={50} color="#b28422" />
             </div>
             <h2>Trabalhista</h2>
+            </Link>
           </div>
 
           <div className="h-full w-full py-10 bg-[#1D1E2C]   flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
+          <Link
+              href={
+                "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi Direito Criminalista .++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A&type=phone_number&app_absent=0"
+              }
+              className="flex items-center justify-center flex-col"
+              target="_blank"
+            >
             <div className="">
               <FaHandcuffs size={50} color="#b28422" />
             </div>
             <h2>Criminalista</h2>
+            </Link>
           </div>
         </div>
         <div
@@ -372,44 +411,67 @@ const Empresarial = () => {
           className="grid-cols-1 w-full px-4 md:w-11/12 mx-auto h-full grid md:grid-cols-3 gap-3 mt-2"
         >
           <div className="h-full w-full py-10 bg-[#1D1E2C]  flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
+          <Link
+              href={
+                "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi Direito Contratual .++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A&type=phone_number&app_absent=0"
+              }
+              className="flex items-center justify-center flex-col"
+              target="_blank"
+            >
             <div className="">
               <FaHandshakeSimple size={50} color="#b28422" />
             </div>
             <h2>Contratual</h2>
+            </Link>
           </div>
 
           <div className="h-full w-full py-10 bg-[#1D1E2C]   flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
+          <Link
+              href={
+                "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi Direito Empresarial .++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A&type=phone_number&app_absent=0"
+              }
+              className="flex items-center justify-center flex-col"
+              target="_blank"
+            >
             <div className="">
               <FaScaleBalanced size={50} color="#b28422" />
             </div>
             <h2>Empresarial</h2>
+            </Link>
           </div>
 
           <div className="h-full w-full py-10 bg-[#1D1E2C]    flex items-center justify-center flex-col gap-2 text-[#b28422] rounded-md">
-            <div className="">
-              <FaHandHoldingDollar size={50} />
-            </div>
-            <h2>Direito Tributário</h2>
+            <Link
+              href={
+                "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi Direito Tributário .++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A&type=phone_number&app_absent=0"
+              }
+              className="flex items-center justify-center flex-col"
+              target="_blank"
+            >
+              <div className="">
+                <FaHandHoldingDollar size={50} />
+              </div>
+              <h2>Direito Tributário</h2>
+            </Link>
           </div>
         </div>
         <div className="w-full h-full mt-10 flex items-center justify-center">
-        <Link
-                href={
-                  "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20empresarial!"
-                }
-                target="_blank"
-                className="flex gap-2 items-center w-full px-2"
-              >
-          <button className="w-full  md:w-96 rounded-3xl bg-[#b28422] py-4 text-white">
-            Solicitar atendimento
-          </button>
+          <Link
+            href={
+              "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A&type=phone_number&app_absent=0"
+            }
+            target="_blank"
+            className="flex gap-2 items-center justify-center w-full px-2"
+          >
+            <button className="w-full  md:w-96 rounded-3xl bg-[#b28422] py-4 text-white">
+              Solicitar atendimento
+            </button>
           </Link>
         </div>
       </section>
       {/*Contato*/}
       <section className="w-full h-full bg-[#293844]  " id="contact">
-
-      <Contact/>
+        <Contact />
       </section>
       <footer className="w-full h-full bg-[#1D1E2C]  py-[4rem]">
         <div className="grid-cols-1 gap-8 md:w-full h-full grid md:grid-cols-4 md:gap-4">
@@ -435,7 +497,7 @@ const Empresarial = () => {
             <div className="w-full flex items-center justify-start gap-4">
               <Link
                 href={
-                  "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20empresarial!"
+                  "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi Direito Empresarial .++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje"
                 }
                 target="_blank"
                 className="w-full flex items-center justify-start gap-4"
@@ -510,18 +572,7 @@ const Empresarial = () => {
               Redes Sociais
             </h1>
             <div className="justify-start flex md:flex items-center md:justify-start w-full h-full gap-4 ">
-              <div className="flex  md: items-center md:justify-center gap-4  ">
-                <Link
-                  href={
-                    "https://www.facebook.com/profile.php?id=100086693444267"
-                  }
-                  target="_blank"
-                >
-                  <div className="flex items-center justify-center w-9 h-9  rounded-full border-2 border-[#c4a24d] bg-white ">
-                    <FaFacebookF size={24} color="#3b5998" />
-                  </div>
-                </Link>
-              </div>
+             
 
               <div className=" flex justify-start my-2  md: items-center md:justify-center gap-4 ">
                 <Link
@@ -533,18 +584,7 @@ const Empresarial = () => {
                   </div>
                 </Link>
               </div>
-              <div className=" flex justify-start  md: items-center md:justify-center gap-4 ">
-                <Link
-                  href={
-                    "https://www.youtube.com/@guedesbampiadvogadosassoci9262"
-                  }
-                  target="_blank"
-                >
-                  <div className="flex items-center justify-center w-9 h-9  rounded-full border-2 border-[#c4a24d] bg-white ">
-                    <FaYoutube size={24} color="#c4302b" />
-                  </div>
-                </Link>
-              </div>
+             
             </div>
           </div>
         </div>
@@ -557,7 +597,7 @@ const Empresarial = () => {
       <div className="fixed bottom-4 right-6">
         <Link
           href={
-            "https://api.whatsapp.com/send?phone=5551980519018&text=Olá!%20Aguardo%20atendimento%20especializado%20para%20área%20empresarial!"
+             "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi Direito Empresarial .++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje"
           }
           target="_blank"
         >
