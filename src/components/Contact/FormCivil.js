@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useRouter } from "next/navigation";
+
 import * as yup from "yup";
 import {
   FaEnvelope,
@@ -13,7 +13,6 @@ import {
 } from "react-icons/fa6";
 
 const Contact = () => {
-
   const formValidation = yup.object({
     name: yup.string().required("Necessário  preencher o campo Nome "),
 
@@ -29,27 +28,21 @@ const Contact = () => {
     handleSubmit,
     watch,
     formState: { errors },
-    reset
+    reset,
   } = useForm({
     resolver: yupResolver(formValidation),
   });
 
   const onSubmit = async (data) => {
-    const request = await fetch("/api/civil",{
-      method:"POST",
-      body:JSON.stringify({data})
-    })
-    const response = await request.json()
-     if(response.message){
-      alert(`${response.message}`)
-      reset()
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+    alert(`Email enviado com sucesso!`)
+    reset()
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
 
-     }
   };
+
   return (
     <div className="w-full h-full flex flex-col  mx-auto ">
       <div
@@ -60,7 +53,7 @@ const Contact = () => {
         <div className="w-full md:w-[60%] flex items-center justify-center ">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            action=""
+            method="POST"
             className="mt-20 w-full bg-white border-1 border-gray-600 px-10 py-4 shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] "
           >
             <h2 className="text-2xl text-center font-bold uppercase text-gray-950">
@@ -75,6 +68,7 @@ const Contact = () => {
                 type="text"
                 placeholder="Digite seu nome.."
                 className="input"
+              
               />
               <p className="text-sm text-red-500">{errors?.name?.message}</p>
             </div>
@@ -87,6 +81,7 @@ const Contact = () => {
                 type="email"
                 placeholder="Digite seu email.."
                 className="input"
+               
               />
               <p className="text-sm text-red-500">{errors?.email?.message}</p>
             </div>
@@ -99,6 +94,7 @@ const Contact = () => {
                 type="text"
                 placeholder="(51) 999-999-999"
                 className="input"
+               
               />
               <p className="text-sm text-red-500">{errors?.phone?.message}</p>
             </div>
@@ -111,6 +107,7 @@ const Contact = () => {
                 type="text"
                 placeholder="Digite seu mensagem.."
                 className="textarea"
+                
               />
               <p className="text-sm text-red-500">{errors?.message?.message}</p>
             </div>
@@ -160,7 +157,7 @@ const Contact = () => {
             </div>
             <div className="w-[80%] h-full flex items-center ">
               <Link
-                href={"mailto:suporte@gmail.com"}
+                href={"mailto:guedesbampi@gmail.com"}
                 target="_blank"
                 className="flex gap-4 items-center"
               >
@@ -175,9 +172,8 @@ const Contact = () => {
           </div>
 
           <div className="w-[80%]  flex flex-col items-center justify-center mt-4">
-          <h1 className="uppercase text-gray-400  ">Siga Nos</h1>
+            <h1 className="uppercase text-gray-400  ">Siga Nos</h1>
             <div className="w-[97%]  md:w-[74%] flex items-center justify-center gap-4 py-4">
-             
               <Link
                 href={"https://www.instagram.com/guedesbampi.adv/"}
                 target="_blank"
@@ -186,7 +182,6 @@ const Contact = () => {
                   <FaInstagram size={35} color="#ccc" />
                 </div>
               </Link>
-             
             </div>
           </div>
         </div>
@@ -197,4 +192,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

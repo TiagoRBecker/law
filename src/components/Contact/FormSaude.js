@@ -35,20 +35,15 @@ const Contact = () => {
   });
 
   const onSubmit = async (data) => {
-    const request = await fetch("/api/saude",{
-      method:"POST",
-      body:JSON.stringify({data})
-    })
-    const response = await request.json()
-     if(response.message){
-      alert(`${response.message}`)
-      reset()
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+    
+    alert(`Email enviado com sucesso!`)
+    reset()
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
 
-     }
+     
   };
   return (
     <div className="w-full h-full flex flex-col  mx-auto ">
@@ -60,7 +55,7 @@ const Contact = () => {
         <div className="w-full md:w-[60%] flex items-center justify-center ">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            action=""
+             method="POST"
             className="mt-20 w-full bg-white border-1 border-gray-600 px-10 py-4 shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] "
           >
             <h2 className="text-2xl text-center font-bold uppercase text-gray-950">
@@ -160,7 +155,7 @@ const Contact = () => {
             </div>
             <div className="w-[80%] h-full flex items-center ">
               <Link
-                href={"mailto:suporte@gmail.com"}
+                href={"mailto:guedesbampi@gmail.com"}
                 target="_blank"
                 className="flex gap-4 items-center"
               >

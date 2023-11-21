@@ -40,7 +40,7 @@ const Saude = () => {
           <div className="flex gap-3 items-center ">
             <div className=" flex items-center gap-2">
               <Link
-                href={"mailto:teste@xn--advogadosdaharmonizao-21b5g.com.br"}
+                href={"mailto:guedesbampi@gmail.com"}
                 className="flex gap-2"
                 target="_blank"
               >
@@ -59,7 +59,7 @@ const Saude = () => {
                   />
                 </svg>
                 <p className="text-sm text-white">
-                  guedessaude@
+                guedesbampi@gmail.com
                 </p>
               </Link>
             </div>
@@ -576,7 +576,7 @@ const Saude = () => {
             <div className="w-full flex items-center justify-start gap-4">
               <div className=" flex gap-4 items-center">
                 <Link
-                  href={"mailto:suporte@gmail.com.br"}
+                  href={"mailto:guedesbampi@gmail.com"}
                   className="w-full flex items-center justify-start gap-4"
                 >
                   <svg
@@ -594,7 +594,7 @@ const Saude = () => {
                     />
                   </svg>
                   <h2 className="  text-gray-400">
-                    guedesempresarial@gmail.com
+                  guedesbampi@gmail.com
                   </h2>
                 </Link>
               </div>

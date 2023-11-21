@@ -45,7 +45,7 @@ const Civil = () => {
           <div className="flex gap-3 items-center ">
             <div className=" flex items-center gap-2">
               <Link
-                href={"mailto:teste@xn--advogadosdaharmonizao-21b5g.com.br"}
+                href={"mailto:guedesbampi@gmail.com"}
                 className="flex gap-2"
                 target="_blank"
               >
@@ -64,7 +64,7 @@ const Civil = () => {
                   />
                 </svg>
                 <p className="text-sm text-white">
-                  guedesbampiecivil@guedesbampi.com
+                guedesbampi@gmail.com
                 </p>
               </Link>
             </div>
@@ -348,7 +348,7 @@ const Civil = () => {
               "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A"
             }
             target="_blank"
-            className="flex gap-2 w-full px-2 items-center"
+            className="flex gap-2 w-full px-2 items-center justify-center"
           >
             <button className="w-full md:w-96 rounded-3xl bg-[#b28422] py-4 text-white">
               Solicitar atendimento
@@ -453,7 +453,7 @@ const Civil = () => {
               "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A&type=phone_number&app_absent=0"
             }
             target="_blank"
-            className="flex w-full px-2 gap-2 items-center"
+            className="flex w-full px-2 gap-2 items-center justify-center"
           >
             <button className="w-full md:w-96 rounded-3xl bg-[#b28422] py-4 text-white">
               Solicitar atendimento
@@ -519,7 +519,7 @@ const Civil = () => {
             <div className="w-full flex items-center justify-start gap-4">
               <div className=" flex gap-4 items-center">
                 <Link
-                  href={"mailto:teste@xn--advogadosdaharmonizao-21b5g.com.br"}
+                  href={"mailto:guedesbampi@gmail.com"}
                   className="w-full flex items-center justify-start gap-4"
                 >
                   <svg
@@ -537,7 +537,7 @@ const Civil = () => {
                     />
                   </svg>
                   <h2 className="  text-gray-400">
-                    guedescivil@guedesbampi.com
+                  guedesbampi@gmail.com
                   </h2>
                 </Link>
               </div>
