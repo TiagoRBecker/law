@@ -272,14 +272,14 @@ const Civil = () => {
             nossa equipe pode trazer a solução do seu problema ainda hoje!
           </p>
 
-          <div className="">
+          <div className="px-2">
             <Link
               href={
                 "https://wa.me//5551980519018?text=Ol%C3%A1%21%20Eu%20gostaria%20de%20conversar%20com%20um%20advogado%20da%20Guedes%20Bampi.%20%20%0AAqui%20est%C3%A1%20um%20resumo%20do%20meu%20problema%3A%20%2Aescreva%20aqui%20o%20que%20n%C3%B3s%20podemos%20fazer%20para%20te%20ajudar%20hoje%21%2A"
               }
               target="_blank"
             >
-              <button className="w-[250px] mt-8 mx-auto py-4 text-white bg-[#c4a24d] uppercase font-bold rounded-md">
+              <button className="w-full md:w-[250px] mt-8 mx-auto py-4 text-white bg-[#c4a24d] uppercase font-bold rounded-md">
                 Fale Conosco
               </button>
             </Link>
@@ -301,14 +301,15 @@ const Civil = () => {
               className="w-full h-auto object-cover rounded-md md:shadow-[21px_24px_0px_0px_#c4a24d,0px_3px_8px_0px_#00000024] "
             />
           </div>
-          <div className="w-full md:w-[60%] flex flex-col items-center justify-center  px-10">
+          <div className="w-fullbg-red-800 md:w-[60%] flex flex-col items-center justify-center  px-10">
             <span className="hidden md:text-[#c4a24d] text-xl  text-left w-full font-bold uppercase">
               Sobre Nós
             </span>
             <h1 className="text-2xl md:text-3xl text-left w-full py-5 font-bold text-[#c4a24d]">
               Bem vindo a Guedes Bampi{" "}
             </h1>
-            <p className="text-justify md:mb-2 text-gray-400">
+            <div className="w-full">
+            <p className="w-full  text-justify md:mb-2 text-gray-400">
               A Guedes Bampi Advogados Associados é um renomado escritório de
               advocacia que se destaca por seu atendimento diferenciado, com
               qualidade e agilidade na solução dos problemas de seus clientes.
@@ -334,6 +335,7 @@ const Civil = () => {
               disso, a ética e a integridade estão no cerne da prática da Guedes
               Bampi Advogados Associados.
             </p>
+            </div>
           </div>
         </div>
         <div
@@ -346,9 +348,9 @@ const Civil = () => {
               "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A"
             }
             target="_blank"
-            className="flex gap-2 items-center"
+            className="flex gap-2 w-full px-2 items-center"
           >
-            <button className="w-96 rounded-3xl bg-[#b28422] py-4 text-white">
+            <button className="w-full md:w-96 rounded-3xl bg-[#b28422] py-4 text-white">
               Solicitar atendimento
             </button>
           </Link>
@@ -451,9 +453,9 @@ const Civil = () => {
               "https://api.whatsapp.com/send/?phone=5551980519018&text=Ol%C3%A1%21+Eu+gostaria+de+conversar+com+um+advogado+da+Guedes+Bampi.++%0AAqui+est%C3%A1+um+resumo+do+meu+problema%3A+%2Aescreva+aqui+o+que+n%C3%B3s+podemos+fazer+para+te+ajudar+hoje%21%2A&type=phone_number&app_absent=0"
             }
             target="_blank"
-            className="flex gap-2 items-center"
+            className="flex w-full px-2 gap-2 items-center"
           >
-            <button className="w-96 rounded-3xl bg-[#b28422] py-4 text-white">
+            <button className="w-full md:w-96 rounded-3xl bg-[#b28422] py-4 text-white">
               Solicitar atendimento
             </button>
           </Link>
@@ -466,6 +468,7 @@ const Civil = () => {
       >
         <Contact />
       </section>
+      {/*Footer*/}
       <footer className="w-full h-full bg-[#072137]  py-[4rem]">
         <div className="grid-cols-1 gap-8 md:w-full h-full grid md:grid-cols-4 md:gap-4">
           {/*Grid Logo*/}
