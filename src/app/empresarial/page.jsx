@@ -49,7 +49,7 @@ const Empresarial = () => {
           <div className="flex gap-3 items-center ">
             <div className=" flex items-center gap-2">
               <Link
-                href={"guedesbampi@gmail.com"}
+                href={"mailto:guedesbampi@gmail.com"}
                 className="flex gap-2"
                 target="_blank"
               >
